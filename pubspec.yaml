@@ -1,0 +1,54 @@
+name: shop_app
+description: null.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: "^2.12.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: "^1.5.0"
+  cloud_firestore: "^2.5.0"
+  firebase_auth: "^3.0.2"
+  firebase_storage: "^10.0.2"
+  image_picker: ^0.8.4
+  provider: ^6.0.0
+  intl: ^0.17.0
+  http: ^0.13.3
+  shared_preferences: ^2.0.7
+  cupertino_icons: ^1.0.3
+  # firebase_core: "^1.5.0"
+  # cloud_firestore: "^2.5.0"
+  # firebase_auth: "^3.0.2"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/UserImage-20.jpg
+    - assets/images/product-placeholder.png
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+    - family: Anton
+      fonts:
+        - asset: assets/fonts/Anton-Regular.ttf
+
+    - family: IBM
+      fonts:
+        - asset: assets/fonts/IBMPlexSansArabic-Regular.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-Bold.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-ExtraLight.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-Light.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-Medium.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-SemiBold.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-Thin.ttf
