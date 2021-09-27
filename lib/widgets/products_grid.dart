@@ -13,7 +13,12 @@ class ProductsGrid extends StatelessWidget {
     final productData = Provider.of<Products>(context);
     final _products = _favoriteProducts ? productData.favoriteItems : productData.items;
 
-    if (_products.isEmpty) return Center(child: Text("Not Found Any Item"));
+    if (_products.isEmpty)
+      return Center(
+          child: Text(
+        "Not Found Any Item",
+        style: Theme.of(context).textTheme.headline3,
+      ));
 
     return GridView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
